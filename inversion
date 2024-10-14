@@ -1,0 +1,22 @@
+#Calculadora de Inversión óptica
+
+esf = -1.50
+cil = -0.50
+eje = 90
+if eje >= 90:
+    eje -= 90  
+else:
+    eje += 90
+
+esfinv = esf+cil
+
+if cil > 0:
+    cil = -cil  
+else:
+    cil = abs(cil)  
+
+
+
+print(f"esferico {esfinv} x cilindrico {cil} en {eje}°")
+
+#In this example the results are: *esferico -2.0 x cilindrico 0.5 en 0°*
